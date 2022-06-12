@@ -47,7 +47,6 @@ body {
 }
 .tekst {
   margin-top: 5rem;
-  margin-right: 5rem;
 }
 .tekst p {
   text-align: center;
@@ -57,6 +56,10 @@ body {
   font-style: normal;
   font-size: 1.2rem;
   line-height: 25px;
+  color: #db3eb1;
+  text-align: center;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  font-weight: bold;
 }
 img {
   width: 100%;
@@ -80,10 +83,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
-P {
-  color: white;
-  text-align: center;
-}
+
 h2 {
   color: white;
   text-align: center;
@@ -91,43 +91,57 @@ h2 {
   font-family: "Avenir Book";
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 25px;
 }
 .navbar {
   height: 12%;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 .logo {
   width: 50px;
   cursor: pointer;
 }
+
 nav {
   flex: 1;
-  text-align: right;
+  text-align: center;
   padding: 2rem;
-  background-color: aqua;
+  background-color: black;
+  text-align: center;
 }
 nav ul li {
   list-style: none;
   display: inline-block;
   margin-left: 60px;
 }
+
 nav ul li a {
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 30px;
+  font-family: tahoma;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  transition: 0.5s;
+  width: 20rem;
+  text-align: left;
+  margin: 1rem;
   text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
 }
+
 a:hover {
   color: black;
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
 }
 
 header {
-  position: sticky;
   top: 0;
   gap: 20px;
   padding: 1rem, 2rem;
@@ -146,10 +160,45 @@ header {
   transition: 0.5s;
   width: 20rem;
   text-align: center;
+  margin: 1rem;
+  margin-left: 12.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #db3eb1;
+}
+a:hover {
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
 }
 
 .button:hover {
   color: black;
   background-color: #db3eb1;
   filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+}
+.om {
+  display: flex;
+  flex-direction: column;
+}
+.billede {
+  width: 30%;
+  height: 30%;
+  align-self: center;
+  margin-top: 8rem;
+  object-fit: cover;
+}
+.billede img {
+  border-radius: 50%;
+}
+.over {
+  text-align: center;
+}
+.bla {
+  grid-column: 2;
+  grid-row: 2;
+}
+h3 {
+  color: white;
 }
