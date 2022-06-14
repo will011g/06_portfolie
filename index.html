@@ -5,73 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolie</title>
+    <link rel="icon" type="image/svg+xml" href="who.svg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&family=Nunito+Sans:wght@200;300;400&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="navbar"></div>
-
-      <nav>
-        <ul>
-          <li><a href="#">WHO</a></li>
-          <li><a href="#">portfolie</a></li>
-          <li><a href="om.html">om mig</a></li>
-        </ul>
-      </nav>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="index.html">WHO</a></li>
+            <li><a href="port.html">Portfolie</a></li>
+            <li><a href="om.html">Om mig</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
-        <div class="galleri">
-          <div class="cookie"><img src="website.webp" alt="website" width="100" height="100" /></div>
-        </div>
-        <div class="tekst">
-          <h2>Grundlæggende Web</h2>
-          <br />
-          <p>I dette emne, lærte vi det basale når det kommer til kodning, smenatiske tags, grid, flexbox og en hjemmesides hirakiske opbygning </p>
-          
-          <div class="button"><a href="om.html">Website</a></div>
+        <div class="splash">
+          <h1>William Høgh</h1>
+          <button onclick="document.getElementById('sang').play()">Drive Mode</button>
         </div>
       </section>
-      <section>
-        <div class="galleri">
-          <div class="cookie"><img src="ap.webp" alt="ap" width="100" height="100" /></div>
-        </div>
-        <div class="tekst">
-          <h2>UX</h2>
-          <br />
-          <p>i UI lærte vi en bred vifte af tekniker og begreber, der alle relatere til UI vi lærte bl.a. om USP, styletile og moddboard, og strategier til bedst mulig at sælge sit produkt</p>
-          
-          <div class="button">UI</div>
-        </div>
-      </section>
-      <section>
-        <div class="galleri">
-          <div class="cookie"><img src="ap.webp" alt="" width="100" height="100" /></div>
-        </div>
-        <div class="tekst">
-          <h2>Grundlæggende animation</h2>
-          <br />
-          <p>i dette emne lavede vi vores eget spil fra, vi stiftede bekendskaber med javascript, illustrator, filformatet svg, animationer, sprite, Math random </p>
-          <div class="button">Game</div>
-          <div class="button">Screendumps</div>
-        </div>
-      </section>
-      <section>
-        <div class="galleri">
-          <div class="cookie">
-              <video controls src="https://williamhoegh.dk/kea/05_indhold/pilot_site/film.mp4" width="620" </video>  </div>
-        </div>
-        <div class="tekst">
-          <h2>Grundlæggende indhold</h2>
-          <br />
-          <p>dette emne var delt op i to under emner, vi brugt halvdelen af tiden på at lærer at klippe film i premiere pro, derudover filmede vi og interviewede DJ'en Ohbee som blev til vores pilotvideo, resten af tiden blev brugt på at redesigne en virksomheds hjemmeside vi valgte Tims Cookies</p>
-          <div class="button">Pilotvideo</div>
-          <div class="button">Redesign</div>
-        </div>
-      </section>
+      <div id="sounds">
+        <!-- TODO: Tilføj audio elementer her -->
+        <audio src="sang.m4a" id="sang"></audio>
+      </div>
     </main>
+    <footer>&copy; William Høgh</footer>
   </body>
 </html>

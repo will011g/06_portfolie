@@ -5,10 +5,11 @@
 }
 
 .splash {
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 4;
+  background-image: url(leon.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
 }
 img {
   object-fit: cover;
@@ -34,7 +35,7 @@ body {
   margin-left: 5rem;
   margin-bottom: 5rem;
 }
-.cookie {
+.port {
   object-fit: cover;
 }
 .tekst h5 {
@@ -50,16 +51,19 @@ body {
 }
 .tekst p {
   text-align: center;
-  margin: 0px;
-  font-family: "Avenir Book";
+  font-family: "nunito sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 25px;
   color: #db3eb1;
   text-align: center;
   filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
   font-weight: bold;
+  text-align: justify;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
 }
 img {
   width: 100%;
@@ -93,11 +97,11 @@ h2 {
   font-style: normal;
   font-size: 2rem;
   line-height: 25px;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
 }
 .navbar {
   height: 12%;
   display: flex;
-  align-items: left;
 }
 .logo {
   width: 50px;
@@ -131,7 +135,7 @@ nav ul li a {
   transition: 0.5s;
   width: 20rem;
   text-align: left;
-  margin: 1rem;
+  margin: auto;
   text-decoration: none;
 }
 
@@ -144,7 +148,6 @@ a:hover {
 header {
   top: 0;
   gap: 20px;
-  padding: 1rem, 2rem;
 }
 .button {
   color: #db3eb1;
@@ -160,8 +163,8 @@ header {
   transition: 0.5s;
   width: 20rem;
   text-align: center;
-  margin: 1rem;
-  margin-left: 12.5rem;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -171,6 +174,7 @@ a {
 a:hover {
   background-color: #db3eb1;
   filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+  color: black;
 }
 
 .button:hover {
@@ -181,7 +185,12 @@ a:hover {
 .om {
   display: flex;
   flex-direction: column;
+  background-image: url(cheng.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
 }
+
 .billede {
   width: 30%;
   height: 30%;
@@ -195,10 +204,146 @@ a:hover {
 .over {
   text-align: center;
 }
-.bla {
-  grid-column: 2;
-  grid-row: 2;
-}
+
 h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: white;
+}
+.bla p {
+  text-align: center;
+
+  font-family: "nunito sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 25px;
+  color: #ffffff;
+  text-align: center;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  margin: 5rem;
+}
+.bla li {
+  text-align: center;
+  margin: 0px;
+  font-family: "nunito sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 25px;
+  color: #db3eb1;
+  text-align: center;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+h1 {
+  color: #db3eb1;
+  text-align: center;
+  margin-top: 20rem;
+
+  padding: 15px 25px;
+  font-size: 10rem;
+  font-family: tahoma;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  text-align: center;
+
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 30px;
+  font-family: tahoma;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  transition: 0.5s;
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-top: 7rem;
+}
+button:hover {
+  color: black;
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+}
+footer {
+  text-align: center;
+  margin: 0px;
+  font-family: "nunito sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 25px;
+  color: #db3eb1;
+  text-align: center;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  font-weight: bold;
+
+  text-align: center;
+}
+@media screen and (max-width: 1190px) {
+  h1 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .galleri {
+    margin: 0;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  .tekst {
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+  .tekst p {
+    text-align: left;
+  }
+  a {
+    margin-bottom: 1rem;
+  }
+  nav ul li a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
